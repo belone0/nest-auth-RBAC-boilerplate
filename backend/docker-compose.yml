@@ -1,0 +1,10 @@
+# DEV COMPOSE - ONLY DATABASE
+services:
+  db:
+    image: postgres:15
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: bridsolucoes
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: focalizacao
